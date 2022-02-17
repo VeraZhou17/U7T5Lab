@@ -93,16 +93,37 @@ public class Search
         return -1;
     }
 
-
-
-
-
     // F. write two static "linearSearchCount" methods (both overloaded), one that
     // accepts an array of ints and a target int, and the other that accepts an ArrayList
     // of Integers and a target int.  Each method should return the NUMBER OF TIMES
     // the target appears in the array/ArrayList.
+    public static int linearSearchCount(int[] nums, int target)
+    {
+        int count = 0;
+        int i = 0;
+        while (i < nums.length)
+        {
+            if (nums[i] == target)
+            {
+                count++;
+            }
+            i++;
+        }
+        return count;
+    }
 
-
-
-
+    public static int linearSearchCount(ArrayList<Integer> nums, int target)
+    {
+        int count = 0;
+        int i = 0;
+        while (i < nums.size())
+        {
+            if (nums.get(i) == target)
+            {
+                count++;
+            }
+            i++;
+        }
+        return count;
+    }
 }
