@@ -1,5 +1,6 @@
 public class CarRepairTest {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         RepairSchedule r = new RepairSchedule(6);
         System.out.println("--------------");
 
@@ -31,5 +32,7 @@ public class CarRepairTest {
         System.out.println(r.getSchedule());
         System.out.println(repair5);
         System.out.println("--------------");
+
+        System.out.println(r.availableMechanics());
     }
 }
